@@ -1,0 +1,197 @@
+body
+{
+background-image: url(Images/background.jpg);
+/* Source: 'https://catwithmonocle.com/wp-content/uploads/2020/03/ac-new-horizons-nook-pattern-3840x2160-1.jpg' */
+
+font-family: "FinkHeavy"
+}
+.header {
+  font-family: "FinkHeavy"
+  padding: 60px;
+  text-align: center;
+  color: #ffd050;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #aa743f;
+}
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url('fonts/FinkHeavy.eot');
+    src: url('fonts/FinkHeavy.eot') format('embedded-opentype'),
+         url('fonts/FinkHeavy.woff2') format('woff2'),
+         url('fonts/FinkHeavy.woff') format('woff'),
+         url('fonts/FinkHeavy.ttf') format('truetype'),
+         url('fonts/FinkHeavy.svg#FinkHeavy') format('svg');
+}
+h2{
+text-align: center;
+color: #ffd050;
+font-size: 35px;
+text-shadow: -1px -1px 0 #aa743f, 1px -1px 0 #aa743f, -1px 1px 0 #aa743f, 1px 1px 0 #aa743f;
+}
+
+footer{
+font-family: 'Be Vietnam'
+}
+
+footer{
+text-align: center;
+color: #ff7768;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menubar {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* pink color */
+  background-color: #ff7768;
+}
+
+.menu-item a {
+  display: block;
+  /* cream color */
+  color: #f5f3d3;
+  width: 25%;
+  text-align: center;
+  padding: 16px 0px;
+  text-decoration: none;
+  float: left;
+}
+
+/* Yellow color on hover */
+.menu-item a:hover {
+  background-color: #ffd050;
+
+}
+
+
+
+legend {
+background-color: #f5f3d3;
+}
+
+form{
+color: #86caa1;
+font-family:  'Be Vietnam'
+}
+
+input[type=submit] {
+  background-color: #ff7768;
+  border: none;
+  color: #f5f3d3;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.scrollbox{
+  background-color: #bcddc8;
+  width: 80%;
+  height: 500px;
+  overflow: scroll;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  scrollbar-base-color: #ff7768;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.carousel{
+	height: 75vh;
+	width: 85vw;
+	overflow:hidden;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.carousel .slide{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index:1;
+	display:none;
+	animation: slide 2s ease;
+}
+.carousel .slide.active{
+	display: flex;
+}
+@keyframes slide{
+	0%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.carousel .controls .prev,
+.carousel .controls .next{
+    position: absolute;
+    z-index:2;
+    top:50%;
+    text-align: center;
+    line-height: 40px;
+    font-size:30px;
+    cursor:pointer;
+    color: #f5f3d3;
+}
+
+.carousel .controls .prev{
+    left:50;
+}
+.carousel .controls .next{
+    right:0;
+}
+
+.carousel .controls .prev:hover,
+.carousel .controls .next:hover{
+	opacity: 0.6;
+}
+
+.carousel .indicator{
+	position: absolute;
+	left:50%;
+	bottom:30px;
+	z-index: 2;
+	transform: translateX(-50%);
+}
+
+.carousel .indicator div{
+	display: inline-block;
+	width:25px;
+	height: 25px;
+	color:#f5f3d3;
+	background-color: #fe8672;
+	border-radius:50%;
+	text-align: center;
+	line-height: 25px;
+	margin:0 3px;
+}
+
+.carousel .indicator div.active{
+    background-color: #abd7bc;
+}
+
+
+
